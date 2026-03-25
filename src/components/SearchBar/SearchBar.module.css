@@ -1,0 +1,20 @@
+.input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+}
