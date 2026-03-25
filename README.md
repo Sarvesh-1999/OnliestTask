@@ -2,6 +2,10 @@
 
 A React + Vite single-page app for authenticated post browsing with search, sort, and pagination.
 
+## 🚀 Live Demo
+
+👉 https://onliest-task.vercel.app/login
+
 ## 🚀 Project Overview
 
 OnliestTask is a small dashboard app that fetches posts from `https://dummyjson.com/posts` and provides:
@@ -59,8 +63,8 @@ OnliestTask is a small dashboard app that fetches posts from `https://dummyjson.
 1. Clone repository
 
    ```bash
-   git clone <repo-url>
-   cd 11_OnliestTask
+   git clone https://github.com/Sarvesh-1999/OnliestTask.git
+   cd OnliestTask
    ```
 
 2. Install dependencies
@@ -104,45 +108,43 @@ This project uses the **DummyJSON Posts API**:
 
 The **DummyJSON API** was chosen for the following reasons:
 
-* **Built-in Pagination Support**
+- **Built-in Pagination Support**
   The API provides `limit` and `skip` parameters, allowing efficient server-side pagination. This reduces frontend complexity and improves performance.
 
-* **Realistic Data Structure**
+- **Realistic Data Structure**
   The posts include fields like `title`, `body`, `userId`, and `views`, which closely resemble real-world applications.
 
-* **Search Functionality**
+- **Search Functionality**
   It supports search endpoints (e.g., `/posts/search?q=keyword`), enabling implementation of dynamic search features.
 
-* **No Authentication Required**
+- **No Authentication Required**
   The API is completely free and does not require API keys, making it easy to integrate and test.
 
-* **Fast & Reliable**
+- **Fast & Reliable**
   Designed for frontend practice, it provides consistent and quick responses.
 
 ---
 
 ## ⚙️ How It Is Used in This Project
 
-* Fetch posts using:
+- Fetch posts using:
 
   ```
   https://dummyjson.com/posts?limit=10&skip=0
   ```
 
-* Search posts:
+- Search posts:
 
   ```
   https://dummyjson.com/posts/search?q=react
   ```
 
-* Pagination is handled using:
-
-  * `limit` → number of items per page
-  * `skip` → number of items to skip
+- Pagination is handled using:
+  - `limit` → number of items per page
+  - `skip` → number of items to skip
 
 This allows smooth implementation of:
 
-* Pagination
-* Search
-* Sorting (handled on frontend)
-
+- Pagination
+- Search
+- Sorting (handled on frontend)
