@@ -14,6 +14,7 @@ const Navbar = () => {
     if (confirmMsg) {
       sessionStorage.removeItem("token");
       navigate("/login");
+      setIsOpen(false);
     }
   };
 
@@ -25,6 +26,7 @@ const Navbar = () => {
           src="https://onliestworld.com/assets/svg/onliestlogo.svg"
           alt="Onliest Logo"
           className={styles.logo}
+          loading="lazy"
         />
       </figure>
 

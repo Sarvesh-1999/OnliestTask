@@ -5,7 +5,9 @@
   background-color: white;
   padding: 16px 24px;
   border-bottom: 1px solid #ddd;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .logo {
